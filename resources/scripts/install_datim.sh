@@ -12,6 +12,7 @@ function dhis () {
   cd $HOME
   rm -rf openinfoman-dhis || true
   git clone https://github.com/openhie/openinfoman-dhis
+  mkdir -p $HOME/openinfoman/repo-src
   cp openinfoman-dhis/repo/* openinfoman/repo-src/
   cd $HOME/openinfoman/repo-src
   declare -a arr=("dxf2csd.xqm" "dxf_1_0.xqm" "util.xqm");\
